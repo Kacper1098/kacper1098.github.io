@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Example Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
 </head>
 <body>
     <div class = "container">
@@ -13,7 +13,7 @@
             <!-- <a href="#home">
                 <img src="images/logo.jpg" class="logo"/>
             </a> -->
-            <a href="index.html" class="logo">
+            <a href="../index.html" class="logo">
                 SggwKacperStefanowicz
             </a>
             <ul>
@@ -21,14 +21,22 @@
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact</a></li>
-
-
+                
             </ul>
         </div>
         <div class="main-content">
            <div>
-                <h1>SGGW Programowanie w internecie</h1>
-                <p>Nullam posuere porttitor neque, ac accumsan metus luctus ac. Praesent nec ullamcorper diam. Maecenas porta mi nec odio molestie ullamcorper. Aenean vulputate pretium leo ut posuere. Aenean vulputate imperdiet sapien viverra fermentum </p>
+                <h1>Kółko i krzyżyk</h1>
+                <p>Aby rozpocząć gre kliknij poniższy przycisk.</p>
+                <button  id="play-button" onclick="openModal()">Zagraj</button>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div id="modal-content" class="modal-content">
+                  <span class="close">&times;</span>
+                  <div id="game-content" class="game-content">
+                  </div>                  
             </div>
         </div>
     </div>
@@ -45,6 +53,7 @@
          </div>
     </footer>
 
+    <script src="gra.js"></script>
 </body>
 </html>
 <!-- https://res.cloudinary.com/practicaldev/image/fetch/s--yHFEDGkd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://uideck.com/wp-content/uploads/edd/2017/11/Mate-Parallax-Website-Template.png -->
